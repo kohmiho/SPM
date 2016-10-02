@@ -1,0 +1,16 @@
+1,1,"1","Section","Introduction","","","","",
+2,1,"1.1","Question","Have you worked with this supplier in 2016?","Text (single line limited)","List of Choices","APPLY","CMT_01",1
+3,1,"2","Section","Safety and Environmental Performance","","","","",
+4,1,"2.1","Question","2015 Supplier OSHA Rate (thru Sept 2015)","Percentage","Any Value","NUM_02","CMT_02",3
+5,1,"2.2","Question","2014 Supplier OSHA Rate","Whole Number","Any Value","NUM_03","CMT_03",3
+6,1,"2.3","Question","DP&C Contractor OSHA Rate","Whole Number","Any Value","NUM_04","CMT_04",3
+7,1,"3","Section","Schedule Management Performance","","","","",
+8,1,"3.1","Question","Does the supplier meet stated contractual administrative requirements in a timely manner (i.e. schedule updates, 2 week look ahead, etc.)?","Text (single line limited)","List of Choices","TEXT_05","CMT_05",7
+9,1,"3.2","Question","How would you rate the supplier's ability to manage their resources, including sub-contractors, to meet or exceed all agreed upon project milestones and to effectively accommodate changes to the contract schedule to meet Project needs?
+","Text (single line limited)","List of Choices","TEXT_06","CMT_06",7
+10,1,"3.3","Question","Please provide comments in regards to the selected answers for Schedule Management Performance:","Text (multiple lines)","Any Value","","CMT_07",7
+11,1,"4","Section","Cost Management Performance","","","","",
+12,1,"4.1","Question","Has the supplier effectively maintained a continuous improvement view or proactively identified potential cost saving opportunities?","Text (single line limited)","List of Choices","TEXT_08","CMT_08",11
+13,1,"4.2","Question","How does the supplier react to unknown field conditions, schedule changes or engineering omissions?","Text (single line limited)","List of Choices","TEXT_09","CMT_09",11
+14,1,"2.4","Section","Subsection","","","","",3
+15,1,"2.4.1","Question","test question","Percentage","Any Value","NUM_10","CMT_10",14

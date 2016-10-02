@@ -1,0 +1,20 @@
+1,2,Yes,,1
+1,2,No,,2
+1,8,Exceeds Expectations(Always On Time),100,1
+1,8,Fully Meets Expectations(Usually On Time),75,2
+1,8,Partially Meets Expectations(Often Late),50,3
+1,8,Far Below Expectations(Always Late),0,4
+1,8,N/A,0,5
+1,9,Exceeds Expectations,100,1
+1,9,Fully Meets Expectations,75,2
+1,9,Partially Meets Expectations,50,3
+1,9,Far Below Expectations,0,4
+1,9,N/A,0,5
+1,12,"Yes(Supplier provided Value Engineering Recommendations in support of the Project. Please provide details related to the recomendation(s), including, but not limited to: was the recommendation implemented, what were the results, etc. in the comments field)",100,1
+1,12,No(Value Engineering Recommendations were not submitted to PSE&G for consideration following the contract award.),50,2
+1,12,N/A(Do not have sufficient knowledge to answer),0,3
+1,13,Exceeds Expectations,100,1
+1,13,Fully Meets Expectations,75,2
+1,13,Partially Meets Expectations,50,3
+1,13,Far Below Expectations,0,4
+1,13,N/A,0,5

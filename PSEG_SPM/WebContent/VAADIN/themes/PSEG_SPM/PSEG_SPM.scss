@@ -1,0 +1,118 @@
+/* Import the reindeer theme.*/
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+
+$v-font-size: 13px;
+
+@import "../valo/valo.scss";
+
+/* This contains all of your theme.*/
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin PSEG_SPM {
+  /* Include all the styles from the valo theme */
+  @include valo;
+  
+  .appBackGround {
+  	background-color: gray ;
+  }
+  
+  .psegBackGround {
+  	background-color: #f79646 ;
+  }
+  
+  .surveyBackGround {
+  	background-color: RGB(0, 176, 240); 
+  }
+  
+  .appTitle {
+  	color: #f79646;
+  	font: bold 32px "Agency FB";
+  	background-color: white;
+  	border: solid black;
+    border-collapse: collapse;
+    
+    .v-label {
+    	text-align: right;
+    }
+  }
+  
+   .loginView {
+   
+    font-size: 14px;
+   
+    .v-caption {
+    	color: black;
+    	font-weight: bold;
+  		font-size: 16px;
+    }
+  
+  	.v-label-errorMsg {
+  		font-weight: bold;
+  		color: red;
+  	}
+  	
+  	.v-formlayout {
+  		border: solid black;
+    	border-collapse: collapse;
+  		background-color : white;
+  	}
+  	
+  }
+  
+  .v-caption {
+  	color: #f79646;
+  }
+  
+  .invisible {
+  	display: none;
+  }
+  
+  .v-icon {
+     width: 10px;
+     height: 10px;
+    }
+  
+  .v-label-loggeduser {
+  	color: white;
+  	font-weight: bold;
+  	font-size: 12px;
+  	text-align: right;
+  }  
+  
+  .v-menubar-menuitem {
+  	font-size: 14px;
+  }
+       
+  .v-label-sectionTitle {
+  	font-weight: bold;
+  	font-size: 18px;
+  	text-align: left;
+  	color:  #f79646;
+  }
+  
+   .v-label-supplierTitle {
+  	font-weight: bold;
+  	font-size: 22px;
+  	text-align: left;
+  	color:  blue;
+  }
+  
+  .v-Notification.good {
+    background-color: Green ;
+  }
+   
+  .welcomePage {
+  	
+  	.v-label-DPC {
+	  	font: bold  32px "Agency FB";
+	  	text-align: center;
+	  }
+  
+  	.v-label-BS {
+ 		color: #f79646;
+  		font: bold  20px Arial;
+  		text-align: center;
+  	}
+  	
+  }
+    
+}
