@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PSEG_SPM</name>
+	<name>SPM</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -37,7 +37,13 @@
 		<link>
 			<name>lib</name>
 			<type>2</type>
-			<locationURI>PROJECT_LOC/WebContent/WEB-INF/lib</locationURI>
+			<locationURI>copy_PROJECT_LOC/WebContent/WEB-INF/lib</locationURI>
 		</link>
 	</linkedResources>
+	<variableList>
+		<variable>
+			<name>copy_PROJECT_LOC</name>
+			<value>$%7BPARENT-2-ECLIPSE_HOME%7D/Users/TDD13/git/SPM_kohmiho/PSEG_SPM</value>
+		</variable>
+	</variableList>
 </projectDescription>

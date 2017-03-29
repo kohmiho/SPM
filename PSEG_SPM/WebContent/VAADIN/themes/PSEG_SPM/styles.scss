@@ -1,9 +1,0 @@
-@import "addons.scss";
-@import "PSEG_SPM.scss";
-
-/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
-/* The actual styles should be defined in PSEG_ESFM.scss */
-.PSEG_SPM {
-  @include addons;
-  @include PSEG_SPM;
-}

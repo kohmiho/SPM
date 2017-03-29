@@ -1,53 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app id="WebApp_ID" version="2.4"
-	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-	<display-name>PSEG_</display-name>
-	<context-param>
-		<description>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">
+  <display-name>SPM</display-name>
+  <context-param>
+    <description>
 		Vaadin production mode</description>
-		<param-name>productionMode</param-name>
-		<param-value>true</param-value>
-	</context-param>
-
-	<session-config>
-		<session-timeout>-1</session-timeout>
-	</session-config>
-
-	<servlet>
-		<servlet-name>Vaadin</servlet-name>
-		<servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
-		<init-param>
-			<description>
+    <param-name>productionMode</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <session-config>
+    <session-timeout>-1</session-timeout>
+  </session-config>
+  <servlet>
+    <servlet-name>Vaadin</servlet-name>
+    <servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
+    <init-param>
+      <description>
 			Vaadin UI class to use</description>
-			<param-name>UI</param-name>
-			<param-value>com.pseg.spm.vaadin.APP_UI</param-value>
-		</init-param>
-		<init-param>
-			<description>
+      <param-name>UI</param-name>
+      <param-value>com.kohmiho.spm.vaadin.APP_UI</param-value>
+    </init-param>
+    <init-param>
+      <description>
 			Legacy mode to return the value of the property as a string from AbstractProperty.toString()</description>
-			<param-name>legacyPropertyToString</param-name>
-			<param-value>false</param-value>
-		</init-param>
-	</servlet>
-
-	<servlet>
-		<description>
+      <param-name>legacyPropertyToString</param-name>
+      <param-value>false</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description>
 		</description>
-		<display-name>Logging</display-name>
-		<servlet-name>Logging</servlet-name>
-		<servlet-class>com.pseg.spm.servlet.Logging</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Vaadin</servlet-name>
-		<url-pattern>/*</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>Logging</servlet-name>
-		<url-pattern>/Logging</url-pattern>
-	</servlet-mapping>
-
-
+    <display-name>Logging</display-name>
+    <servlet-name>Logging</servlet-name>
+    <servlet-class>com.kohmiho.spm.servlet.Logging</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Vaadin</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logging</servlet-name>
+    <url-pattern>/Logging</url-pattern>
+  </servlet-mapping>
 </web-app>
